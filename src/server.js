@@ -446,6 +446,9 @@ const server = http.createServer(async (req, res) => {
     if (req.method === "GET" && req.url === "/api/data") {
       return send(res, 200, await readJsonData());
     }
+    if (req.method === "GET" && req.url === "/healthz") {
+      return send(res, 200, { ok: true, status: "healthy" });
+    }
     if (req.method === "POST" && req.url === "/api/save") {
       await writeJsonData(await body(req));
       return send(res, 200, { ok: true, savedAt: new Date().toISOString() });
