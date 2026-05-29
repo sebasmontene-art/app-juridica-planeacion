@@ -19,10 +19,10 @@ node src/server.js
 Luego abre:
 
 ```text
-http://localhost:4177
+http://localhost:5000
 ```
 
-Si aparece `EADDRINUSE`, significa que el puerto `4177` ya esta ocupado. Primero prueba abrir `http://localhost:4177`; si ya carga el dashboard, no necesitas iniciar otro servidor.
+Si aparece `EADDRINUSE`, significa que el puerto `5000` ya esta ocupado. Primero prueba abrir `http://localhost:5000`; si ya carga el dashboard, no necesitas iniciar otro servidor.
 
 Para usar otro puerto:
 
@@ -35,18 +35,23 @@ set PORT=4178 && node src/server.js
 El boton `Guardar cambios` persiste los cambios en archivos JSON dentro de:
 
 ```text
-docs/planning/
+planning_dashboard/data/
 ```
 
-JSON significa JavaScript Object Notation. En este dashboard es simplemente el formato de archivo donde se guardan las tablas y textos editables. No es una base de datos, no es un secreto y no se envia a internet; queda local en el proyecto para que al cerrar y abrir se mantengan los cambios.
+JSON significa JavaScript Object Notation. En este dashboard es simplemente el formato de archivo donde se guardan las tablas y textos editables. No es una base de datos, no es un secreto y no se envia a internet por si solo; queda en el proyecto para que al cerrar y abrir se mantengan los cambios.
 
-El boton `Exportar resumen` guarda:
+El boton `Exportar resumen` genera un resumen visual para imprimir o guardar como PDF desde el navegador. No hace pagos, no llama APIs externas y no envia datos a terceros.
+
+## Replit
+
+Para Replit se incluye:
 
 ```text
-docs/planning/PLAN_RESUMEN.md
-docs/planning/PLAN_RESUMEN.html
-docs/planning/PLAN_RESUMEN.pdf
+.replit
+replit.nix
 ```
+
+`replit.nix` declara Node.js 20. Si Replit muestra `node: command not found` o `npm: executable file not found`, normalmente significa que el entorno de deployment no cargo esa dependencia todavia; hay que actualizar desde GitHub y redeployar.
 
 ## Secciones
 
