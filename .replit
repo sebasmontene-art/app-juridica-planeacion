@@ -1,9 +1,11 @@
+language = "javascript"
+entrypoint = "src/server.js"
 modules = ["nodejs-20"]
-run = "npm start"
+run = "node src/server.js"
 
 [nix]
 channel = "stable-23_11"
 
 [deployment]
-run = "npm start"
+run = "node src/server.js"
 deploymentTarget = "autoscale"
