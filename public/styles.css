@@ -1031,7 +1031,17 @@ td select {
 
 .simple-table table {
   min-width: 1120px;
+  table-layout: fixed;
 }
+
+.simple-table td:nth-child(1) { width: 44px; }
+.simple-table td:nth-child(2) { width: 18%; }
+.simple-table td:nth-child(3) { width: 22%; }
+.simple-table td:nth-child(4) { width: 12%; }
+.simple-table td:nth-child(5) { width: 10%; }
+.simple-table td:nth-child(6) { width: 13%; }
+.simple-table td:nth-child(7) { width: 17%; }
+.simple-table td:nth-child(8) { width: 80px; }
 
 .simple-table td input,
 .simple-table td textarea,
@@ -1044,7 +1054,10 @@ td select {
 }
 
 .simple-table td:nth-child(2) input {
-  min-width: 190px;
+  min-width: 0;
+  width: 100%;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .check-cell {
