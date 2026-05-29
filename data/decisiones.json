@@ -1,0 +1,31 @@
+{
+  "decisiones": [
+    {
+      "fecha": "2026-05-28",
+      "decision": "Crear dashboard local de planeacion aislado de la app productiva.",
+      "responsable": "Sebastian",
+      "fundamento": "Preparar reunion estrategica sin tocar produccion.",
+      "impacto": "Permite editar plan, roadmap, costos y riesgos.",
+      "estado": "Aprobada",
+      "pendiente_asociado": "Validar en reunion con socio."
+    },
+    {
+      "fecha": "2026-05-28",
+      "decision": "Mantener WhatsApp fuera del MVP inicial.",
+      "responsable": "Sebastian",
+      "fundamento": "Costos y requisitos deben verificarse.",
+      "impacto": "Reduce complejidad inicial.",
+      "estado": "Preliminar",
+      "pendiente_asociado": "Investigacion semana 1."
+    },
+    {
+      "fecha": "2026-05-28",
+      "decision": "Primer modulo gratuito: denuncias por presunto maltrato animal.",
+      "responsable": "Sebastian",
+      "fundamento": "Validacion social, confianza y alcance acotado.",
+      "impacto": "Define foco del MVP.",
+      "estado": "Preliminar",
+      "pendiente_asociado": "Fuentes juridicas y formulario."
+    }
+  ]
+}

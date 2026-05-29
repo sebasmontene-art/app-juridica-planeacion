@@ -1,0 +1,94 @@
+{
+  "modulos": [
+    {
+      "nombre": "Denuncias por maltrato animal",
+      "tipo": "gratuito",
+      "prioridad": "Inmediata",
+      "complejidad_juridica": "Media",
+      "complejidad_tecnica": "Media",
+      "nivel_riesgo": "Alto",
+      "estado": "MVP 6 semanas",
+      "observaciones": "Primer MVP gratuito. Enfocado en orientacion y estructuracion de denuncias por presunto maltrato animal, con fuentes oficiales, consentimiento, evidencias y revision humana."
+    },
+    {
+      "nombre": "Derecho de peticion",
+      "tipo": "pago individual",
+      "prioridad": "Alta posterior",
+      "complejidad_juridica": "Media",
+      "complejidad_tecnica": "Media",
+      "nivel_riesgo": "Medio",
+      "estado": "Horizonte 12 meses",
+      "observaciones": "Primer candidato pago sencillo despues de estabilizar el MVP de animales y validar pagos."
+    },
+    {
+      "nombre": "Reclamaciones administrativas",
+      "tipo": "pago individual",
+      "prioridad": "Alta posterior",
+      "complejidad_juridica": "Media",
+      "complejidad_tecnica": "Media",
+      "nivel_riesgo": "Medio",
+      "estado": "Horizonte 12 meses",
+      "observaciones": "Puede entrar como reclamacion basica o vertical especifica despues de derecho de peticion."
+    },
+    {
+      "nombre": "Accion de tutela",
+      "tipo": "pago individual o asistido",
+      "prioridad": "Media por riesgo juridico",
+      "complejidad_juridica": "Alta",
+      "complejidad_tecnica": "Media",
+      "nivel_riesgo": "Alto",
+      "estado": "No MVP",
+      "observaciones": "Modulo de mayor cuidado. Requiere control juridico, revision humana fuerte, limites claros y posible servicio asistido."
+    },
+    {
+      "nombre": "Quejas administrativas",
+      "tipo": "pago individual",
+      "prioridad": "Media",
+      "complejidad_juridica": "Media",
+      "complejidad_tecnica": "Media",
+      "nivel_riesgo": "Medio",
+      "estado": "Horizonte 12 meses",
+      "observaciones": "Candidato posterior, aprovechando estructura de reclamaciones y derechos de peticion."
+    },
+    {
+      "nombre": "Revision de contratos",
+      "tipo": "pago individual",
+      "prioridad": "Posterior",
+      "complejidad_juridica": "Alta",
+      "complejidad_tecnica": "Alta",
+      "nivel_riesgo": "Alto",
+      "estado": "Horizonte posterior",
+      "observaciones": "Requiere carga documental, confidencialidad, control de datos y revision humana."
+    },
+    {
+      "nombre": "Biblioteca juridica asistida",
+      "tipo": "suscripcion",
+      "prioridad": "Posterior",
+      "complejidad_juridica": "Alta",
+      "complejidad_tecnica": "Media",
+      "nivel_riesgo": "Medio",
+      "estado": "Meses 11-12",
+      "observaciones": "Producto de conocimiento apoyado en fuentes oficiales. No debe mezclar expedientes reales."
+    },
+    {
+      "nombre": "Seguimiento de casos",
+      "tipo": "suscripcion o complemento pago",
+      "prioridad": "Posterior",
+      "complejidad_juridica": "Media",
+      "complejidad_tecnica": "Alta",
+      "nivel_riesgo": "Medio",
+      "estado": "Meses 11-12",
+      "observaciones": "Complemento para estados, vencimientos, notificaciones y panel operador."
+    },
+    {
+      "nombre": "Consulta juridica asistida",
+      "tipo": "servicio asistido o suscripcion de alto cuidado",
+      "prioridad": "No MVP",
+      "complejidad_juridica": "Alta",
+      "complejidad_tecnica": "Alta",
+      "nivel_riesgo": "Alto",
+      "estado": "No MVP",
+      "observaciones": "Modulo de mayor cuidado. No debe lanzarse sin validacion humana, limites de orientacion, trazabilidad y fuentes oficiales."
+    }
+  ]
+}

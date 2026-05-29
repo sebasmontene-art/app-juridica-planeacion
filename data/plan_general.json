@@ -1,0 +1,152 @@
+{
+  "resumen_ejecutivo": {
+    "nombre_proyecto": "Plataforma juridica modular asistida por inteligencia artificial",
+    "objetivo_general": "Construir gradualmente, durante un horizonte estrategico de 12 meses, una plataforma juridica modular asistida por IA controlada, revision humana y trazabilidad. El primer modulo sera gratuito y estara enfocado en orientacion y estructuracion de denuncias por presunto maltrato animal. Los demas modulos juridicos se implementaran de forma progresiva y seran monetizables mediante pago individual por tarea, paquetes, suscripciones o servicios asistidos por operador juridico. Las primeras 6 semanas no buscan construir toda la plataforma: buscan cerrar investigacion, costeo real, arquitectura, planeacion juridica y tecnica, y un MVP inicial del modulo gratuito de animales.",
+    "problema_resuelve": "Muchas personas no saben como convertir un problema juridico en una solicitud clara, documentada y presentable ante una autoridad o entidad.",
+    "publico_objetivo": "Ciudadanos, organizaciones de proteccion animal, usuarios que requieren documentos juridicos guiados y operadores juridicos que revisan casos.",
+    "propuesta_valor": "Guiar al usuario paso a paso, controlar la IA con fuentes y plantillas, permitir revision humana, generar documentos utiles y mantener trazabilidad del caso.",
+    "modulos_gratuitos": [
+      "Denuncias por presunto maltrato animal en MVP inicial"
+    ],
+    "modulos_pagos": [
+      "Derecho de peticion",
+      "Reclamaciones administrativas o basicas",
+      "Acciones de tutela asistidas",
+      "Quejas administrativas",
+      "Revision de contratos",
+      "Biblioteca juridica asistida",
+      "Seguimiento de casos",
+      "Consulta juridica asistida de alto cuidado"
+    ],
+    "restricciones_iniciales": [
+      "No construir todos los modulos juridicos en las primeras 6 semanas",
+      "No implementar pagos reales en la herramienta de planeacion ni en el MVP inicial de animales",
+      "No integrar WhatsApp real en MVP inicial; queda como fase 2 condicionada a costeo",
+      "No usar expedientes reales para pruebas",
+      "No guardar secretos en repositorio",
+      "No generar respuestas juridicas sin revision humana en asuntos sensibles"
+    ],
+    "decisiones_pendientes": [
+      "Costeo real sustentado por proveedor y volumen",
+      "Proveedor de hosting inicial",
+      "Proveedor de storage",
+      "Pasarela de pagos para Colombia",
+      "Modelo de precios por modulo",
+      "Politica de retencion de datos",
+      "Flujo exacto de revision humana",
+      "Orden de modulos pagos para meses 3 a 12"
+    ]
+  },
+  "alcance_mvp": {
+    "entra": [
+      "Dashboard local de planeacion y seguimiento",
+      "Modulo gratuito de denuncias por maltrato animal",
+      "Formulario guiado",
+      "Carga de evidencias en ambiente controlado",
+      "Generacion documental basica",
+      "Revision humana previa a entrega",
+      "Trazabilidad minima",
+      "Biblioteca juridica inicial",
+      "Arquitectura y costeo para escalar durante 12 meses"
+    ],
+    "no_entra": [
+      "Pagos reales",
+      "WhatsApp real",
+      "Construccion de todos los modulos pagos",
+      "Suscripciones comerciales",
+      "IA autonoma sin control",
+      "Base de datos productiva compleja",
+      "Autenticacion avanzada",
+      "Expedientes reales durante planeacion"
+    ],
+    "fase_2": [
+      "Primeros modulos pagos solo despues de validar MVP animales y costeo",
+      "WhatsApp Business Platform si el costeo lo justifica",
+      "Telegram como canal adicional",
+      "Notificaciones por correo",
+      "Panel operador completo",
+      "Mejoras de almacenamiento y auditoria",
+      "Pasarela de pagos para modulos pagos"
+    ],
+    "fase_comercial": [
+      "Pagos individuales",
+      "Paquetes",
+      "Suscripciones",
+      "Servicios asistidos por abogado",
+      "Facturacion o soporte contable",
+      "Analitica comercial",
+      "Biblioteca juridica asistida monetizable",
+      "Expansion gradual a otros verticales juridicos"
+    ],
+    "supuestos": [
+      "Sebastian trabaja maximo 4 horas diarias de lunes a sabado",
+      "El socio valida juridicamente decisiones criticas",
+      "La primera vertical gratuita ayuda a validar confianza y flujo",
+      "Los costos reales deben verificarse antes de comprometer arquitectura",
+      "La plataforma completa se implementa gradualmente durante 12 meses, no en 6 semanas"
+    ],
+    "limitaciones": [
+      "Tiempo disponible limitado",
+      "Costos variables de IA y mensajeria",
+      "Necesidad de proteger datos personales",
+      "Riesgo de ampliar demasiado el alcance",
+      "Los modulos pagos dependen de pagos, soporte, seguridad y operacion comercial posteriores al MVP"
+    ]
+  },
+  "whatsapp": {
+    "funcionamiento_general": "WhatsApp debe tratarse como canal de entrada y comunicacion de fase 2, no como MVP inicial, nucleo juridico ni pasarela de pago.",
+    "diferencia_canal_pasarela": "WhatsApp puede recibir mensajes y enviar actualizaciones; los pagos deben validarse mediante una pasarela externa como Wompi, Mercado Pago u otra opcion viable. WhatsApp no reemplaza la pasarela.",
+    "costos_variables": "WhatsApp debe costearse antes de implementarse. El modelo vigente de cobro por mensaje, conversacion o plantilla debe verificarse porque puede cambiar y depende del proveedor.",
+    "integracion_oficial": "Se debe evaluar integracion oficial o proveedor autorizado para evitar bloqueos, incumplimientos o costos ocultos.",
+    "categorias_mensajes": [
+      "Servicio",
+      "Utilidad",
+      "Autenticacion",
+      "Marketing"
+    ],
+    "riesgo_costos_variables": "El volumen de usuarios puede disparar costos si se automatizan conversaciones extensas por WhatsApp.",
+    "recomendacion_preliminar": "Mantener WhatsApp fuera del MVP inicial. Solo avanzar a fase 2 si el costeo real demuestra viabilidad. En modulos pagos, el flujo por WhatsApp debe validar pago por pasarela antes de generar documentos.",
+    "tareas_pendientes": [
+      "Verificar precios vigentes de WhatsApp Business Platform",
+      "Comparar proveedores",
+      "Definir plantillas permitidas",
+      "Separar flujo de pago de flujo conversacional",
+      "Medir costo por caso juridico",
+      "Definir validacion de pago antes de generar documentos en modulos pagos"
+    ]
+  },
+  "pagos": {
+    "modelos": [
+      "Pago individual por tarea",
+      "Suscripcion mensual",
+      "Paquetes de documentos",
+      "Servicios asistidos por abogado",
+      "Modelo gratuito para animales"
+    ],
+    "validacion_pago": "Los modulos pagos deben validar el pago antes de generar documentos finales o permitir revision asistida.",
+    "webhook": "La pasarela debe confirmar pagos por webhook antes de habilitar entregables.",
+    "comprobante": "El usuario debe recibir comprobante o registro de pago y el sistema debe conservar trazabilidad.",
+    "facturacion_soporte": "Definir si se requiere facturacion electronica, recibo, soporte contable o integracion con tercero."
+  },
+  "recomendaciones": {
+    "tecnicas": [
+      "Mantener MVP web antes de canales conversacionales",
+      "Separar planeacion, datos de prueba y produccion",
+      "Definir matriz de datos personales antes de almacenar evidencias",
+      "Evitar proveedores pagos hasta cerrar costeo real"
+    ],
+    "juridicas": [
+      "Trabajar con plantillas revisadas por humano",
+      "Registrar fuentes juridicas oficiales por modulo",
+      "Incluir consentimiento informado y limites de orientacion",
+      "No prometer resultado juridico"
+    ],
+    "producto": [
+      "Validar primero el flujo gratuito de animales",
+      "Medir tiempo real de revision humana",
+      "Definir precios por complejidad y esfuerzo",
+      "Mantener backlog comercial separado del MVP",
+      "Revisar el horizonte de 12 meses en cada reunion estrategica"
+    ]
+  }
+}

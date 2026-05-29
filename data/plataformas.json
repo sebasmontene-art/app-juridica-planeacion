@@ -1,0 +1,175 @@
+{
+  "plataformas": [
+    {
+      "nombre": "Supabase",
+      "categoria": "base de datos/storage/auth",
+      "uso_candidato": "Backend administrado para MVP",
+      "ventajas": "Postgres y storage integrados",
+      "riesgos": "Limites y costos deben verificarse",
+      "estado": "Investigar",
+      "responsable": "Codex"
+    },
+    {
+      "nombre": "Cloudflare Workers",
+      "categoria": "hosting/serverless",
+      "uso_candidato": "API ligera",
+      "ventajas": "Buen costo y edge",
+      "riesgos": "Modelo serverless puede limitar librerias",
+      "estado": "Investigar",
+      "responsable": "Codex"
+    },
+    {
+      "nombre": "Cloudflare R2",
+      "categoria": "storage",
+      "uso_candidato": "Evidencias y documentos",
+      "ventajas": "Storage de objetos",
+      "riesgos": "Permisos y privacidad",
+      "estado": "Investigar",
+      "responsable": "Sebastian"
+    },
+    {
+      "nombre": "Render",
+      "categoria": "hosting",
+      "uso_candidato": "Deploy simple",
+      "ventajas": "Facil para prototipos",
+      "riesgos": "Limites plan gratuito",
+      "estado": "Investigar",
+      "responsable": "Sebastian"
+    },
+    {
+      "nombre": "Railway",
+      "categoria": "hosting",
+      "uso_candidato": "Deploy simple",
+      "ventajas": "Experiencia rapida",
+      "riesgos": "Costos variables",
+      "estado": "Investigar",
+      "responsable": "Sebastian"
+    },
+    {
+      "nombre": "VPS economico",
+      "categoria": "hosting",
+      "uso_candidato": "Control y costo fijo",
+      "ventajas": "Costo predecible",
+      "riesgos": "Mayor carga operativa",
+      "estado": "Investigar",
+      "responsable": "Codex"
+    },
+    {
+      "nombre": "Firebase",
+      "categoria": "backend",
+      "uso_candidato": "Datos y hosting",
+      "ventajas": "Rapido para MVP",
+      "riesgos": "Modelo de costos y portabilidad",
+      "estado": "Investigar",
+      "responsable": "Codex"
+    },
+    {
+      "nombre": "Google Drive",
+      "categoria": "storage/documentos",
+      "uso_candidato": "Trabajo interno no productivo",
+      "ventajas": "Familiar",
+      "riesgos": "No ideal para expedientes productivos",
+      "estado": "Candidato interno",
+      "responsable": "Sebastian"
+    },
+    {
+      "nombre": "OneDrive",
+      "categoria": "storage/documentos",
+      "uso_candidato": "Trabajo interno no productivo",
+      "ventajas": "Disponible en equipo",
+      "riesgos": "Sin controles productivos finos",
+      "estado": "Candidato interno",
+      "responsable": "Sebastian"
+    },
+    {
+      "nombre": "Wompi",
+      "categoria": "pagos",
+      "uso_candidato": "Pagos Colombia",
+      "ventajas": "Enfoque local",
+      "riesgos": "Comisiones y requisitos",
+      "estado": "Investigar",
+      "responsable": "Sebastian"
+    },
+    {
+      "nombre": "Mercado Pago",
+      "categoria": "pagos",
+      "uso_candidato": "Pagos regionales",
+      "ventajas": "Adopcion regional",
+      "riesgos": "Comisiones y conciliacion",
+      "estado": "Investigar",
+      "responsable": "Sebastian"
+    },
+    {
+      "nombre": "Stripe",
+      "categoria": "pagos",
+      "uso_candidato": "Pagos internacionales",
+      "ventajas": "API robusta",
+      "riesgos": "Disponibilidad y requisitos locales",
+      "estado": "Investigar",
+      "responsable": "Sebastian"
+    },
+    {
+      "nombre": "WhatsApp Business Platform",
+      "categoria": "mensajeria",
+      "uso_candidato": "Canal fase 2",
+      "ventajas": "Alta adopcion",
+      "riesgos": "Costos variables y plantillas",
+      "estado": "Fase 2",
+      "responsable": "Sebastian"
+    },
+    {
+      "nombre": "Telegram Bot API",
+      "categoria": "mensajeria",
+      "uso_candidato": "Canal fase 2",
+      "ventajas": "Bot simple",
+      "riesgos": "Menor adopcion",
+      "estado": "Fase 2",
+      "responsable": "Codex"
+    },
+    {
+      "nombre": "OpenAI",
+      "categoria": "IA",
+      "uso_candidato": "Asistencia IA",
+      "ventajas": "Modelos fuertes",
+      "riesgos": "Costo y control de salidas",
+      "estado": "Investigar",
+      "responsable": "ChatGPT"
+    },
+    {
+      "nombre": "Gemini",
+      "categoria": "IA",
+      "uso_candidato": "Asistencia IA alternativa",
+      "ventajas": "Ecosistema Google",
+      "riesgos": "Costos y calidad por caso",
+      "estado": "Investigar",
+      "responsable": "ChatGPT"
+    },
+    {
+      "nombre": "Claude",
+      "categoria": "IA",
+      "uso_candidato": "Asistencia IA alternativa",
+      "ventajas": "Buen razonamiento textual",
+      "riesgos": "Costos y disponibilidad",
+      "estado": "Investigar",
+      "responsable": "ChatGPT"
+    },
+    {
+      "nombre": "SendGrid",
+      "categoria": "correo",
+      "uso_candidato": "Correos transaccionales",
+      "ventajas": "Maduro",
+      "riesgos": "Entregabilidad y costo",
+      "estado": "Investigar",
+      "responsable": "Codex"
+    },
+    {
+      "nombre": "Resend",
+      "categoria": "correo",
+      "uso_candidato": "Correos transaccionales",
+      "ventajas": "DX simple",
+      "riesgos": "Limites y costo",
+      "estado": "Investigar",
+      "responsable": "Codex"
+    }
+  ]
+}

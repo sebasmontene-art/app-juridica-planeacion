@@ -1,0 +1,46 @@
+{
+  "responsables": [
+    {
+      "nombre": "Sebastian",
+      "rol": "Director funcional y juridico",
+      "responsabilidad": "Define vision, prioridades, reglas juridicas y decisiones de negocio.",
+      "observaciones": "Maximo 4 horas diarias de lunes a sabado."
+    },
+    {
+      "nombre": "Socio",
+      "rol": "Validador juridico y socio estrategico",
+      "responsabilidad": "Revisa fundamentos, riesgos juridicos y enfoque comercial.",
+      "observaciones": "Debe aprobar decisiones sensibles."
+    },
+    {
+      "nombre": "ChatGPT",
+      "rol": "Arquitectura juridica y producto",
+      "responsabilidad": "Apoya prompts, documentos rectores, revision critica y estrategia.",
+      "observaciones": "No reemplaza criterio juridico humano."
+    },
+    {
+      "nombre": "Codex",
+      "rol": "Jefe tecnico y revisor de codigo",
+      "responsabilidad": "Controla repositorio, arquitectura tecnica, revisiones y despliegue.",
+      "observaciones": "Debe evitar tocar secretos y produccion sin instruccion."
+    },
+    {
+      "nombre": "Claude Code",
+      "rol": "Implementador por fases",
+      "responsabilidad": "Ejecuta tareas de construccion definidas y revisadas.",
+      "observaciones": "Debe seguir backlog aprobado."
+    },
+    {
+      "nombre": "Operador juridico",
+      "rol": "Revisor y aprobador",
+      "responsabilidad": "Revisa documentos antes de entrega al usuario.",
+      "observaciones": "Rol obligatorio para asuntos sensibles."
+    },
+    {
+      "nombre": "Usuario final",
+      "rol": "Solicitante",
+      "responsabilidad": "Entrega informacion, evidencias y consentimiento.",
+      "observaciones": "Debe recibir limites claros del servicio."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "componentes": [
+    {
+      "componente": "frontend",
+      "opcion_preliminar": "Web modular",
+      "estado": "Por definir",
+      "observaciones": "Priorizar experiencia clara y responsive."
+    },
+    {
+      "componente": "backend",
+      "opcion_preliminar": "API ligera",
+      "estado": "Por definir",
+      "observaciones": "Separar modulos juridicos y servicios compartidos."
+    },
+    {
+      "componente": "base de datos",
+      "opcion_preliminar": "Supabase/Firebase/Postgres",
+      "estado": "Investigar",
+      "observaciones": "Evaluar privacidad, costos y backups."
+    },
+    {
+      "componente": "storage",
+      "opcion_preliminar": "Cloudflare R2/Supabase Storage",
+      "estado": "Investigar",
+      "observaciones": "Evidencias requieren politicas de acceso y retencion."
+    },
+    {
+      "componente": "motor IA",
+      "opcion_preliminar": "Proveedor IA configurable",
+      "estado": "Investigar",
+      "observaciones": "Controlar prompts, fuentes y temperatura."
+    },
+    {
+      "componente": "generacion PDF/DOCX",
+      "opcion_preliminar": "Plantillas servidor",
+      "estado": "Por definir",
+      "observaciones": "Versionar plantillas juridicas."
+    },
+    {
+      "componente": "pagos",
+      "opcion_preliminar": "Wompi/Mercado Pago/Stripe",
+      "estado": "Investigar",
+      "observaciones": "Validar webhook antes de entregar documentos pagos."
+    },
+    {
+      "componente": "WhatsApp",
+      "opcion_preliminar": "Fase 2",
+      "estado": "Diferido",
+      "observaciones": "Verificar costos vigentes."
+    },
+    {
+      "componente": "Telegram",
+      "opcion_preliminar": "Bot fase 2",
+      "estado": "Diferido",
+      "observaciones": "Canal de bajo costo para pruebas."
+    },
+    {
+      "componente": "correo",
+      "opcion_preliminar": "Resend/SendGrid",
+      "estado": "Investigar",
+      "observaciones": "Confirmaciones, entregas y soporte."
+    },
+    {
+      "componente": "panel operador",
+      "opcion_preliminar": "Vista interna",
+      "estado": "Por definir",
+      "observaciones": "Revision humana, estados y aprobaciones."
+    },
+    {
+      "componente": "Obsidian",
+      "opcion_preliminar": "Repositorio de conocimiento",
+      "estado": "Aprobado preliminar",
+      "observaciones": "No guardar expedientes reales."
+    },
+    {
+      "componente": "NotebookLM",
+      "opcion_preliminar": "Analisis de fuentes",
+      "estado": "Aprobado preliminar",
+      "observaciones": "Notebooks por vertical juridica."
+    },
+    {
+      "componente": "monitoreo",
+      "opcion_preliminar": "Logs + alertas",
+      "estado": "Por definir",
+      "observaciones": "Trazabilidad de errores y costos."
+    },
+    {
+      "componente": "seguridad",
+      "opcion_preliminar": "Minimos desde MVP",
+      "estado": "Critico",
+      "observaciones": "Secretos fuera de Git, permisos y consentimientos."
+    }
+  ]
+}

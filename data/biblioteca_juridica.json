@@ -1,0 +1,28 @@
+{
+  "obsidian": {
+    "usos": [
+      "Biblioteca juridica interna del proyecto",
+      "Normas",
+      "Jurisprudencia",
+      "Rutas juridicas",
+      "Plantillas",
+      "Prompts",
+      "Decisiones",
+      "Costos",
+      "Actas de reunion",
+      "Registro de decisiones estrategicas y tecnicas"
+    ]
+  },
+  "notebooklm": {
+    "usos": [
+      "Apoyo para analisis de fuentes juridicas cargadas",
+      "Notebooks por vertical juridico",
+      "Proteccion animal",
+      "Derecho de peticion",
+      "Tutela",
+      "Proteccion de datos",
+      "Procedimiento administrativo"
+    ]
+  },
+  "regla_datos": "Obsidian y NotebookLM no deben guardar expedientes reales de ciudadanos en esta fase. Solo fuentes, notas, matrices, decisiones y documentos de trabajo. Ambos apoyan precision juridica y organizacion del conocimiento, pero no reemplazan la validacion humana de Sebastian, el socio o el operador juridico."
+}

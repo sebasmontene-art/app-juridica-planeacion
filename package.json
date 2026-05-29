@@ -1,0 +1,11 @@
+{
+  "name": "planning-dashboard-juridico",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dashboard local editable para planear una plataforma juridica modular.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {}
+}

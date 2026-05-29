@@ -1,0 +1,40 @@
+{
+  "flujo": [
+    {
+      "nombre": "Usuario"
+    },
+    {
+      "nombre": "Canal de entrada"
+    },
+    {
+      "nombre": "Seleccion de modulo juridico"
+    },
+    {
+      "nombre": "Validacion de gratuidad o pago"
+    },
+    {
+      "nombre": "Consentimiento de datos"
+    },
+    {
+      "nombre": "Formulario guiado"
+    },
+    {
+      "nombre": "Carga de documentos/evidencias"
+    },
+    {
+      "nombre": "IA controlada"
+    },
+    {
+      "nombre": "Revision humana"
+    },
+    {
+      "nombre": "Generacion documental"
+    },
+    {
+      "nombre": "Entrega al usuario"
+    },
+    {
+      "nombre": "Archivo y trazabilidad"
+    }
+  ]
+}

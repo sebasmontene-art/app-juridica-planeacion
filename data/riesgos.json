@@ -1,0 +1,116 @@
+{
+  "riesgos": [
+    {
+      "riesgo": "Datos personales",
+      "nivel": "Alto",
+      "impacto": "Sanciones, perdida de confianza y exposicion de usuarios.",
+      "mitigacion": "Consentimiento, minimizacion, retencion definida y seguridad.",
+      "responsable": "Sebastian",
+      "estado": "Abierto"
+    },
+    {
+      "riesgo": "Respuestas juridicas incorrectas",
+      "nivel": "Alto",
+      "impacto": "Perjuicio al usuario y responsabilidad reputacional.",
+      "mitigacion": "Revision humana, fuentes oficiales y limites claros.",
+      "responsable": "Socio",
+      "estado": "Abierto"
+    },
+    {
+      "riesgo": "IA inventando informacion",
+      "nivel": "Alto",
+      "impacto": "Documentos defectuosos y perdida de confianza.",
+      "mitigacion": "Prompts controlados, verificacion y no entrega automatica sensible.",
+      "responsable": "ChatGPT",
+      "estado": "Abierto"
+    },
+    {
+      "riesgo": "Costos variables de WhatsApp",
+      "nivel": "Medio",
+      "impacto": "Margen negativo por conversaciones largas.",
+      "mitigacion": "Dejar WhatsApp para fase 2 y costear antes.",
+      "responsable": "Sebastian",
+      "estado": "Abierto"
+    },
+    {
+      "riesgo": "Dependencia de planes gratuitos",
+      "nivel": "Medio",
+      "impacto": "Interrupciones o migraciones urgentes.",
+      "mitigacion": "Costeo por escenarios y proveedor alterno.",
+      "responsable": "Codex",
+      "estado": "Abierto"
+    },
+    {
+      "riesgo": "Almacenamiento inseguro",
+      "nivel": "Alto",
+      "impacto": "Exposicion de evidencias o documentos.",
+      "mitigacion": "Storage privado, permisos, expiracion y auditoria.",
+      "responsable": "Codex",
+      "estado": "Abierto"
+    },
+    {
+      "riesgo": "Falta de revision humana",
+      "nivel": "Alto",
+      "impacto": "Entrega de documentos juridicos riesgosos.",
+      "mitigacion": "Estado obligatorio de aprobacion antes de entrega.",
+      "responsable": "Operador juridico",
+      "estado": "Abierto"
+    },
+    {
+      "riesgo": "Errores de pago",
+      "nivel": "Medio",
+      "impacto": "Entregas sin pago o usuarios cobrados sin servicio.",
+      "mitigacion": "Webhooks, conciliacion y comprobantes.",
+      "responsable": "Codex",
+      "estado": "Abierto"
+    },
+    {
+      "riesgo": "Secretos en Git",
+      "nivel": "Alto",
+      "impacto": "Exposicion de claves y cuentas.",
+      "mitigacion": "Variables de entorno, gitignore y revision tecnica.",
+      "responsable": "Codex",
+      "estado": "Abierto"
+    },
+    {
+      "riesgo": "Hosting inestable",
+      "nivel": "Medio",
+      "impacto": "Caidas del servicio y perdida de confianza.",
+      "mitigacion": "Proveedor estable y monitoreo minimo.",
+      "responsable": "Codex",
+      "estado": "Abierto"
+    },
+    {
+      "riesgo": "Falta de tiempo de Sebastian",
+      "nivel": "Alto",
+      "impacto": "Retrasos y decisiones incompletas.",
+      "mitigacion": "Plan de 4 horas maximo por dia, lunes a sabado.",
+      "responsable": "Sebastian",
+      "estado": "Abierto"
+    },
+    {
+      "riesgo": "Alcance demasiado amplio",
+      "nivel": "Alto",
+      "impacto": "No terminar MVP.",
+      "mitigacion": "Priorizar animales gratuito y diferir pagos/canales.",
+      "responsable": "Sebastian",
+      "estado": "Abierto"
+    },
+    {
+      "riesgo": "Mala experiencia de usuario",
+      "nivel": "Medio",
+      "impacto": "Abandono del formulario.",
+      "mitigacion": "Formulario por pasos y pruebas con casos ficticios.",
+      "responsable": "Claude Code",
+      "estado": "Abierto"
+    },
+    {
+      "riesgo": "Falta de fuentes juridicas oficiales",
+      "nivel": "Alto",
+      "impacto": "Fundamentos debiles o desactualizados.",
+      "mitigacion": "Biblioteca juridica por vertical y revision del socio.",
+      "responsable": "Socio",
+      "estado": "Abierto"
+    }
+  ]
+}
