@@ -522,9 +522,10 @@ function renderSummary() {
 
 function taskRow(task) {
   const done = task.estado === "Cerrado";
+  const hasDetail = task.detalle && task.detalle.trim();
   return `<tr data-task="${task.id}">
     <td class="check-cell"><input type="checkbox" data-task-key="done" ${done ? "checked" : ""}></td>
-    <td>${field("Nombre", task.titulo, 'data-task-key="titulo"', "input")}</td>
+    <td>${field("Nombre", task.titulo, 'data-task-key="titulo"')}</td>
     <td>${field("Descripcion", task.descripcion, 'data-task-key="descripcion"')}</td>
     <td>${field("Responsable", task.responsable, 'data-task-key="responsable"', "input")}</td>
     <td>${field("Tiempo", task.tiempo_estimado, 'data-task-key="tiempo_estimado"', "input")}</td>
@@ -535,8 +536,20 @@ function taskRow(task) {
     </td>
     <td>${field("Notas", task.observaciones || task.criterio_aprobacion || "", 'data-task-key="observaciones"')}</td>
     <td class="row-actions">
+      <button class="secondary detail-btn${hasDetail ? " has-detail" : ""}" data-detail-task="${task.id}" type="button">Detalle${hasDetail ? " ●" : ""}</button>
       <button class="secondary" data-duplicate-task="${task.id}" type="button">Duplicar</button>
       <button class="danger" data-delete-task="${task.id}" type="button">Eliminar</button>
+    </td>
+  </tr>
+  <tr class="detail-row" data-detail-for="${task.id}" style="display:none">
+    <td colspan="8" class="detail-cell">
+      <div class="detail-panel">
+        <label class="field"><span>Detalle</span><textarea class="detail-textarea" rows="5" placeholder="Escribe aqui el detalle completo de la tarea, sin limite...">${escapeHtml(task.detalle || "")}</textarea></label>
+        <div class="detail-actions">
+          <button class="primary detail-save" data-detail-save="${task.id}" type="button">Guardar</button>
+          <button class="secondary detail-cancel" data-detail-cancel="${task.id}" type="button">Cancelar</button>
+        </div>
+      </div>
     </td>
   </tr>`;
 }
@@ -580,7 +593,7 @@ function renderWeek(week) {
       <div class="progress general"><span style="width:${percent}%; background:${color}"></span></div>
     </article>
     <div class="table-wrap simple-table">
-      <table>
+      <table class="task-table">
         <thead>
           <tr>
             <th>Hecho</th>
@@ -644,7 +657,22 @@ function costRow(item, index) {
     </td>
     <td>${field("Decision / fundamento", item.decision || "", `data-cost-key="decision"`)}</td>
     <td>${field("Riesgo", item.riesgo || "", `data-cost-key="riesgo"`)}</td>
-    <td class="row-actions"><button class="secondary" data-duplicate-cost="${index}" type="button">Duplicar</button><button class="danger" data-delete-cost="${index}" type="button">Eliminar</button></td>
+    <td class="row-actions">
+      <button class="secondary detail-btn${item.detalle ? " has-detail" : ""}" data-detail-cost="${index}" type="button">Detalle${item.detalle ? " ●" : ""}</button>
+      <button class="secondary" data-duplicate-cost="${index}" type="button">Duplicar</button>
+      <button class="danger" data-delete-cost="${index}" type="button">Eliminar</button>
+    </td>
+  </tr>
+  <tr class="detail-row" data-detail-cost-row="${index}" style="display:none">
+    <td colspan="99" class="detail-cell">
+      <div class="detail-panel">
+        <label class="field"><span>Detalle</span><textarea class="detail-textarea" rows="5" placeholder="Escribe aqui el detalle completo, sin limite...">${escapeHtml(item.detalle || "")}</textarea></label>
+        <div class="detail-actions">
+          <button class="primary" data-detail-cost-save="${index}" type="button">Guardar</button>
+          <button class="secondary" data-detail-cost-cancel="${index}" type="button">Cancelar</button>
+        </div>
+      </div>
+    </td>
   </tr>`;
 }
 
@@ -700,7 +728,7 @@ function renderCustomPage(page) {
     </div>
     ${objectiveView("page", page.id, page.descripcion || "")}
     <div class="table-wrap simple-table">
-      <table>
+      <table class="task-table">
         <thead>
           <tr>
             <th>Hecho</th>
@@ -745,8 +773,24 @@ function simpleRows(path, keys, title, intro) {
       <thead><tr>${keys.map((key) => `<th>${key.replaceAll("_", " ")}</th>`).join("")}<th></th></tr></thead>
       <tbody>${insertRowButton(path, 0, keys.length + 1)}${rows.map((row, index) => `<tr data-row="${index}" data-path="${path}">
         ${keys.map((key) => `<td>${field(key, row[key] || "", `data-row-key="${key}"`)}</td>`).join("")}
-        <td class="row-actions"><button class="secondary" data-duplicate-row="${path}" data-index="${index}" type="button">Duplicar</button><button class="danger" data-delete-row="${path}" data-index="${index}" type="button">Eliminar</button></td>
-      </tr>${insertRowButton(path, index + 1, keys.length + 1)}`).join("")}</tbody>
+        <td class="row-actions">
+          <button class="secondary detail-btn${row.detalle ? " has-detail" : ""}" data-detail-row="${escapeHtml(path)}" data-detail-row-index="${index}" type="button">Detalle${row.detalle ? " ●" : ""}</button>
+          <button class="secondary" data-duplicate-row="${path}" data-index="${index}" type="button">Duplicar</button>
+          <button class="danger" data-delete-row="${path}" data-index="${index}" type="button">Eliminar</button>
+        </td>
+      </tr>
+      <tr class="detail-row" data-detail-row-for="${escapeHtml(path)}-${index}" style="display:none">
+        <td colspan="99" class="detail-cell">
+          <div class="detail-panel">
+            <label class="field"><span>Detalle</span><textarea class="detail-textarea" rows="5" placeholder="Escribe aqui el detalle completo, sin limite...">${escapeHtml(row.detalle || "")}</textarea></label>
+            <div class="detail-actions">
+              <button class="primary" data-detail-row-save="${escapeHtml(path)}" data-detail-row-save-index="${index}" type="button">Guardar</button>
+              <button class="secondary" data-detail-row-cancel="${escapeHtml(path)}-${index}" type="button">Cancelar</button>
+            </div>
+          </div>
+        </td>
+      </tr>
+      ${insertRowButton(path, index + 1, keys.length + 1)}`).join("")}</tbody>
     </table></div>
   </section>`;
   finalizeRender();
@@ -976,6 +1020,31 @@ content.addEventListener("click", (event) => {
     });
     newTaskId = id;
   }
+  if (button.dataset.detailTask) {
+    const detailRow = content.querySelector(`[data-detail-for="${button.dataset.detailTask}"]`);
+    if (detailRow) {
+      const isOpen = detailRow.style.display !== "none";
+      detailRow.style.display = isOpen ? "none" : "table-row";
+      if (!isOpen) detailRow.querySelector(".detail-textarea").focus();
+    }
+    return;
+  }
+  if (button.dataset.detailSave) {
+    const detailRow = content.querySelector(`[data-detail-for="${button.dataset.detailSave}"]`);
+    const task = getTask(button.dataset.detailSave);
+    if (task && detailRow) {
+      task.detalle = detailRow.querySelector(".detail-textarea").value;
+      detailRow.style.display = "none";
+      dirty();
+      renderPage();
+    }
+    return;
+  }
+  if (button.dataset.detailCancel) {
+    const detailRow = content.querySelector(`[data-detail-for="${button.dataset.detailCancel}"]`);
+    if (detailRow) detailRow.style.display = "none";
+    return;
+  }
   if (button.dataset.duplicateTask) {
     const original = getTask(button.dataset.duplicateTask);
     data.roadmap.tareas.push({ ...structuredClone(original), id: `task_${Date.now()}`, titulo: `${original.titulo} copia` });
@@ -1010,6 +1079,40 @@ content.addEventListener("click", (event) => {
       estado_decision: "Por investigar",
       decision: ""
     });
+  }
+  if (button.dataset.detailCost !== undefined) {
+    const row = content.querySelector(`[data-detail-cost-row="${button.dataset.detailCost}"]`);
+    if (row) { const open = row.style.display !== "none"; row.style.display = open ? "none" : "table-row"; if (!open) row.querySelector(".detail-textarea").focus(); }
+    return;
+  }
+  if (button.dataset.detailCostSave !== undefined) {
+    const index = Number(button.dataset.detailCostSave);
+    const row = content.querySelector(`[data-detail-cost-row="${index}"]`);
+    if (row) { data.costos.costos[index].detalle = row.querySelector(".detail-textarea").value; row.style.display = "none"; dirty(); renderPage(); }
+    return;
+  }
+  if (button.dataset.detailCostCancel !== undefined) {
+    const row = content.querySelector(`[data-detail-cost-row="${button.dataset.detailCostCancel}"]`);
+    if (row) row.style.display = "none";
+    return;
+  }
+  if (button.dataset.detailRow !== undefined) {
+    const key = `${button.dataset.detailRow}-${button.dataset.detailRowIndex}`;
+    const row = content.querySelector(`[data-detail-row-for="${CSS.escape(key)}"]`);
+    if (row) { const open = row.style.display !== "none"; row.style.display = open ? "none" : "table-row"; if (!open) row.querySelector(".detail-textarea").focus(); }
+    return;
+  }
+  if (button.dataset.detailRowSave !== undefined) {
+    const index = Number(button.dataset.detailRowSaveIndex);
+    const key = `${button.dataset.detailRowSave}-${index}`;
+    const row = content.querySelector(`[data-detail-row-for="${CSS.escape(key)}"]`);
+    if (row) { getRows(button.dataset.detailRowSave)[index].detalle = row.querySelector(".detail-textarea").value; row.style.display = "none"; dirty(); renderPage(); }
+    return;
+  }
+  if (button.dataset.detailRowCancel !== undefined) {
+    const row = content.querySelector(`[data-detail-row-for="${CSS.escape(button.dataset.detailRowCancel)}"]`);
+    if (row) row.style.display = "none";
+    return;
   }
   if (button.dataset.duplicateCost) {
     const index = Number(button.dataset.duplicateCost);
