@@ -1,4 +1,4 @@
 run = "node src/server.js"
 
 [deployment]
-run = ["node", "src/server.js"]
+run = ["bash", "-c", "node src/server.js"]

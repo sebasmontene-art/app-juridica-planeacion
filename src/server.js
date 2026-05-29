@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const publicDir = path.resolve(__dirname, "..", "public");
 const planningDir = path.resolve(__dirname, "..", "data");
-const port = Number(process.env.PORT || 4177);
+const port = Number(process.env.PORT || 5000);
 
 const files = {
   plan_general: "plan_general.json",
